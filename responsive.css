@@ -1,0 +1,295 @@
+@media screen and (max-width: 1201px){
+  .header_text{
+    top: 25%;
+  }
+  .header_text h1{
+    font-size: 300%;
+  }
+  .header_text p{
+    font-size: 100%;
+  }
+  .header_text button{
+    font-size: 80%;
+    width: 160px;
+    height: 50px;
+  }
+  .coffee_cards {
+    max-width: 900px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+  .column_image {
+  justify-content: center;
+}
+  .column_image img{
+    width: 240px;
+    height: 240px;
+  }
+
+  .left_big{
+    width: 240px;
+    object-fit: cover;
+  }
+  .right{
+    width: 370px;
+  }
+  .history_card{
+    justify-content: center;
+    gap: 25px;
+  }
+  .product_cards {
+    max-width: 900px;
+    gap: 20px;
+}
+.view{
+  width: 188px;
+}
+.coffee_machine {
+  gap: 78px;
+  width: 900px;
+  padding: 72px 80px 84px 84px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu_box {
+  max-width: 900px;
+}
+
+.map img{
+  width: 400px;
+}
+
+.map_info{
+  padding: 20px;
+}
+.map_input{
+  height: 50px;
+  width: 460px;
+}
+.map_info h4 {
+  font-size: 180%;
+}
+.input{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.news_cards {
+  max-width: 900px;
+  grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
+}
+.text_flex {
+  gap: 95px;
+}
+.footer_container {
+  flex-direction: column-reverse;
+}
+
+.footer_input {
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+
+@media screen and (max-width: 953px){
+  .nav ul {
+    flex-direction: column;
+    text-align: center;
+    background-color:rgba(54, 46, 35, 0.603) ;
+    width: 200px;
+    height: 100%;
+    margin-right: 0;
+    position: fixed;
+    top: 0;
+    left: -200px	;
+    padding-top: 350px;
+    transition: 1s all ease-in-out;
+    z-index: 999;
+    gap: 40px;
+
+  }
+
+  #resp_check:checked ~ .nav ul {
+    left: 0;
+  }
+  
+  #resp_icon{
+    display: block;
+  }
+
+  label {
+   text-align: end;
+   margin-right: 100px;
+  }
+  .coffee_cards {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+}
+.history_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+.right{
+  width: 520px;
+}
+.product_cards {
+  max-width: 600px;
+  gap: 50px;
+}
+.text_coffee_machine h3 {
+  font-size: 145%;
+}
+.text_coffee_machine p {
+  font-size: 70%;
+}
+.text_coffee_machine button {
+  width: 162px;
+  height: 50px;
+  font-size: 70%;
+}
+.coffee_machine {
+  width: 600px;
+}
+.menu_box {
+  max-width: 600px;
+}
+.map_info {
+  width: 600px;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.map_input {
+  margin: auto;
+}
+.map img {
+  width: 600px;
+}
+.news_cards {
+  max-width: 600px;
+}
+}
+
+
+@media screen and (max-width: 778px){
+  .footer_nav {
+ flex-direction: column;
+}
+}
+
+@media screen and (max-width: 667px){
+  .header_text {
+    width: 300px;
+    left: 5%; 
+}
+.coffee_machine {
+  width: 400px;
+  flex-direction: column-reverse;
+}
+.coffee_machine img {
+  width: 200px;
+  height: 300px;
+  flex-direction: column-reverse;
+}
+.menu_box {
+  max-width: 400px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.image_card img{
+  width: 300px;
+  height: 300px;
+}
+
+.top_card  {
+  margin-left: 40px;
+}
+.map img {
+  width: 400px;
+}
+.map_info {
+  width: 400px;
+}
+.map_input {
+  height: 50px;
+  width: 300px;
+}
+.left {
+  flex-direction: column;
+}
+.right {
+  width: 300px;
+  padding: 30px;
+}
+.news_cards {
+  max-width: 300px;
+}
+.text_products h3 {
+  font-size: 180%;
+}
+}
+
+@media screen and (max-width: 411px){
+  .header_text h1 {
+    font-size: 180%;
+}
+.header_text p {
+  font-size: 65%;
+}
+.header_text button {
+  font-size: 60%;
+  width: 100px;
+  height: 40px;
+}
+  .coffee_machine {
+    width: 300px;
+}
+.text_coffee_machine h3 {
+  font-size: 115%;
+}
+.text_coffee_machine p {
+  font-size: 42%;
+}
+.text_coffee_machine button {
+  width: 115px;
+  height: 28px;
+  font-size: 30%;
+}
+.menu_box {
+  max-width: 300px;
+}
+.menu_line {
+  gap: 20px;
+  padding: 15px;
+}
+.map img {
+  width: 300px;
+}
+.map_info {
+  width: 300px;
+}
+.map_input {
+  width: 200px;
+}
+.map_info button {
+  padding: 10px 10px;
+  font-size: 70%;
+}
+.latest_news h5 {
+  font-size: 165%;
+}
+.text_products h3 {
+  font-size: 130%;
+}
+.footer_input {
+  width: 270px;
+}
+}

@@ -1,0 +1,639 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Urbanist", sans-serif;
+  font-family: "Righteous", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --brown: #C99E71;
+  --white: #FFF;
+  --gray: rgba(255, 255, 255, 0.80);
+  --black: #1C1814;
+  --black2: #14110E;
+}
+
+li{
+  list-style: none;
+}
+
+.header_navigation{
+  background-color: var(--black);
+  padding-top: 32px;
+  padding-bottom: 33px;
+}
+
+.nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.header_info {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/Rectangle\ 12.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.header_text{
+  width: 529px;
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+
+.header_text h1{
+  color: var(--white);
+  font-family: "Righteous", sans-serif;
+  font-size: 360%;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.header_text p{
+  color: var(--gray);
+  font-family: "Urbanist", sans-serif;
+  font-size: 140%;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 64px;
+}
+
+.header_text button{
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 10px;
+  font-size: 90%;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  width: 170px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+
+.header_text button:hover{
+  background-color: #c7ae92;
+  color: #000000;
+}
+
+
+section {
+  background-color: var(--black2);
+}
+
+.container{
+  padding-top: 94px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 300px;
+}
+
+.coffee_cards{
+  display: grid;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fill, minmax(366px, 1fr));
+  gap: 36px;
+  margin-bottom: 140px;
+}
+
+.top_card{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.top_card span{
+  color: var(--brown);
+  font-family: "Righteous", sans-serif;
+  font-size: 120%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.top_card p{
+  color: var(--white);
+  font-family: "Righteous", sans-serif;
+  font-size: 120%;
+  font-weight: 400;
+}
+
+.history_card{
+  display: flex;
+  gap: 32px;
+  margin-bottom: 140px;
+}
+
+.left{
+  display: flex;
+  gap: 32px;
+}
+
+.column_image{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.column_image img{
+  width: 298px;
+  height: 302px;
+}
+
+.right{
+  width: 510px;
+  height: 635px;
+  background-color: var(--black);
+  padding: 120px 56px 147px 56px;
+}
+
+.right span{
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 90%;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.right h2{
+  color: var(--white);
+  font-family: "Righteous", sans-serif;
+  font-size: 240%;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.right p{
+  color: var(--gray);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 180%;
+  text-transform: capitalize;
+}
+
+.products{
+  text-align: center;
+}
+
+.text_products span{
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text_products h3{
+  color: #FFF;
+  font-family: "Righteous", sans-serif;
+  font-size: 240%;
+  font-weight: 400;
+  margin-bottom: 104px;
+  margin-top: 12px;
+}
+
+.product_cards{
+  display: grid;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 132px;
+}
+
+.product_image {
+  margin-bottom: 37px;
+}
+
+.product_info h3{
+  color: #FFF;
+  font-family: "Righteous", sans-serif;
+  font-size: 120%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product_info button{
+  width: 169px;
+  height: 48px;
+  background-color: var(--brown);
+  color: var(--white);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  display: flex;
+  gap: 12px;
+  padding: 13px 20px 13px 20px;
+  border: none;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 38px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.product_info button:hover{
+  background-color: #c7ae92;
+  color: #000000;
+}
+
+.rate{
+  display: flex;
+  gap: 13px;
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 80%;
+  font-weight: 500;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin-top: 20px;
+  color: var(--white);
+  font-family: "Urbanist", sans-serif;
+  font-size: 90%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.price span{
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 90%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.view {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 90%;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 20px 36px 20px 36px;
+  background-color: var(--brown);
+  width: 252px;
+  height: 62px;
+  border: none;
+  margin-top: 96px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.view:hover{
+  background-color: #c7ae92;
+  color: #000000;
+}
+
+.coffee_machine{
+  margin-top: 140px;
+  background-color: var(--black);
+  display: flex;
+  gap: 160px;
+  padding: 72px 80px 84px 169px;
+}
+
+.text_coffee_machine h3{
+  color: #FFF;
+  font-family: "Righteous", sans-serif;
+  font-size: 240%;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 36px;
+}
+
+.text_coffee_machine p{
+  color: var(--gray);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 180%;
+  text-transform: capitalize;
+  margin-bottom: 36px;
+}
+
+.text_coffee_machine button{
+  width: 215px;
+  height: 62px;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--brown);
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.text_coffee_machine button:hover{
+  background-color: #c7ae92;
+  color: #000000;
+}
+
+.menu_box{
+  display: grid;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fill, minmax(565px, 1fr));
+  gap: 40px;
+  margin-top: 55px;
+}
+
+.menu{
+  margin-top: 90px;
+  text-align: center;
+}
+
+.menu span{
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.menu h4{
+  color: var(--white);
+  font-family: "Righteous", sans-serif;
+  font-size: 240%;
+  font-weight: 400;
+  margin-top: 11px;
+}
+
+.menu_line{
+  border: 1px solid #32323D;
+  display: flex;
+  align-items: center;
+  gap: 117px;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.menu_image{
+  display: flex;
+  color: #FFF;
+  font-family: "Righteous", sans-serif;
+  font-size: 120%;
+  font-weight: 400;
+  align-items: center;
+  gap: 20px;
+}
+
+.map {
+  margin-top: 365px;
+  display: flex;
+  justify-content: center;
+}
+
+.map_info{
+  padding: 72px 48px 72px 48px;
+  background-color: var(--black);
+  text-align: center;
+}
+
+.map_info span{
+  color: #C99E71;
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.map_info  h4{
+  color: var(--white);
+  font-family: "Righteous", sans-serif;
+  font-size: 240%;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.input{
+  margin-top: 56px;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.map_input {
+  width: 489px;
+  height: 64px;
+  background: var(--black2);
+  border: none;
+  color: var(--gray);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 20px;
+}
+
+::placeholder{
+  color: var(--gray);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.map_info button{
+  padding: 20px 36px;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--brown);
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.map_info button:hover{
+  background-color: #c7ae92;
+  color: #000000;
+}
+
+.latest_news-text{
+  text-align: center;
+  margin-top: 366px;
+}
+
+.latest_news span{
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 115%;
+  font-weight: 600;
+}
+
+.latest_news h5{
+  color: var(--white);
+  font-family: "Righteous", sans-serif;
+  font-size: 240%;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.news_cards{
+  display: grid;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fill, minmax(366px, 1fr));
+  gap: 36px;
+  margin-top: 56px;
+}
+
+.news{
+  display: flex;
+  flex-direction: column;
+}
+
+.news_bottom{
+  background-color: var(--black);
+  padding: 20px 24px 24px 24px;
+}
+
+.text_flex{
+  display: flex;
+  gap: 149px;
+  color: var(--white);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.text_flex span{
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+.ideal {
+  color: var(--white);
+  font-family: "Righteous", sans-serif;
+  font-size: 125%;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.read{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brown);
+  font-family: "Urbanist", sans-serif;
+  font-size: 80%;
+  font-weight: 500;
+  margin-top: 33px;
+}
+
+footer{
+  background-color: var(--black2);
+}
+
+.footer_container{
+  display: flex;
+  justify-content: center;
+  gap: 82px;
+  padding-bottom: 78px;
+}
+
+.footer_nav {
+  display: flex;
+  color: var(--white);
+  font-size: 100%;
+  font-weight: 400;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_input{
+  width: 328px;
+  height: 72px;
+  border-radius: 36px;
+  background: rgba(150, 141, 141, 0.16);
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 12px 12px 28px;
+}
+
+.footer_input input{
+  background: none;
+  border: none;
+  width: 90%;
+  outline: none;
+}
+
+input{
+  color: var(--white);
+}
+
+.circle{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--brown);
+  padding: 12px;
+}
+
+.circle img{
+  width: 100%;
+  height: 100%;
+}
+
+.footer{
+  padding-top: 33px;
+  padding-bottom: 32px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Urbanist", sans-serif;
+  font-size: 70%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.image_card img {
+  max-width: 100%;
+}
+
+.left img{
+  max-width: 100%;
+}
+
+.coffee_machine img{
+  max-width: 100%;
+}
+
+#resp_icon {
+	display: none;
+}
+
